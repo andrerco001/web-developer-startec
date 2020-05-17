@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<header>
+    <title>Web developer course</title>
+    <meta charset="utf-8">
+</header>
+
+<body>
+    <h1>Web developer course</h1>
+
+
+
+
+
+    <script>
+        console.log('Olá mundo.');
+
+        var nome = 'Lilys'; // string
+        var age = 4; // integer
+        var weight = 7.5; // decimal
+        var beautiful = true; // boolean
+
+        var array = ['Lilys', 'Mel', 'Belinha', 'Mango'];
+        for (let a in array) {
+            console.log(array[a]);
+        }
+
+        var lilys = {
+            name: 'Lilys',
+            age: 4,
+            weight: 7.5,
+            dog: true
+        };
+
+        console.log(lilys.name + " has " + lilys.age + " years old");
+
+        // functions
+        function somar(x, y) {
+            return x + y;
+        }
+
+        let soma = somar(5, 5);
+        console.log('Result ' + soma);
+
+
+        // calcula desconto
+        function calculaDesconto(idade) {
+
+            if (idade > 18) {
+                return 'R$15,00';
+            } else {
+                return 'R$10,00'
+            }
+        }
+
+        var idade = 20;
+        var resultado = calculaDesconto(idade);
+        console.log('Valor do desconto ' + resultado + ', a idade do comprador é ' + idade);
+
+        var cars = ['Civic', 'Kia', 'Corola', 'Dodge'];
+        cars.forEach((e, i) => {
+            console.log(i + ' : ' + e);
+        });
+
+        //
+    </script>
+
+</body>
+
+</html>
